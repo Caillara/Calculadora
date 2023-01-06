@@ -1,0 +1,67 @@
+*{
+    @import url('https://fonts.googleapis.com/css2? family= IBM+Plex+Mono:wght@300;700 & family= Montserrat:wght@200;300;500;700 & familia= Oswald:peso@400;500;600;700 &family= Roboto+Slab:wght@300;700 & family= Roboto:wght@300;400;500 & display=swap');
+    color: #ffffff;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(44, 43, 97);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: 160px repeat(5, 70px);
+    background-color: rgb(41, 163, 116);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 7px 7px 5px 5px rgb(0, 0, 0, 0.3);
+}
+
+button{
+    margin: 5px;
+    background-color: rgb(41, 163, 116);
+    border: none;
+    border-radius: 32px;
+    box-shadow: 5px 5px 10px -3px rgb(0, 0, 0, 0.4), -5px -5px 15px 3px  rgba(32, 129, 92, 0.4);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+button:active{
+    background-color: rgb(33, 113, 83);
+}
+
+.display{
+    grid-column: 1 / -1;
+    background-color: rgb(34, 34, 34);
+    border: solid 5px rgb(33, 113, 83);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+#valorActual{
+    font-size: 30px;
+}
+
+#valorAnterior{
+    font-size: 25px;
+}
+
+.col-2{
+    grid-column: span 2;
+}
